@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "b39b4f8e-be3b-4c01-8491-9ad46fcbb44b",
+		"name": "Bookstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10806538"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"Harry Potter And The Goblet Of Fire\",\n    \"Author\": \"J.K Rowling\",\n    \"Publication\": \"Penguin\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9010/book",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9010",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"Harry Potter And Prisoner of Azkaban\",\n    \"Author\": \"J.K Rowling\",\n    \"Publication\": \"Penguin\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9010/book/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9010/book",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9010",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9010/book/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"Say something\",\n    \"Author\": \"J.K Rowling\",\n    \"Publication\": \"Penguin\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9010/book/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
